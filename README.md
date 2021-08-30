@@ -28,6 +28,9 @@ FeatureDict = {"Geographical": ["lng", "lat", "nearest_x3", "kavg_x4", "inrange_
 
 
 Acknowledgment:
+
 http://lbsyun.baidu.com/
+
 https://m.mp.oeeee.com/h5/pages/v20/nCovcase/
+
 https://github.com/BlankerL/DXY-COVID-19-Data
