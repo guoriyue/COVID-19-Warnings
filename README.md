@@ -5,13 +5,13 @@ The Phase1, Phase2, Phase3 are in trainvalidtest.phase(1/2/3).json
 data structure:
 
 ```
-[
-    [EachCase, ...] # train
-    [EachCase, ...] # valid
-    [EachCase, ...] # test
-]
-EachCase = [month,day,provience_name, city_name, district_name, location_name, [lng,lat], FeatureDict]
+FeatureList = [
+"lng", "lat", "nearest_x3", "kavg_x4", "inrange_x7", "region_nearest_x5", "region_mean_x6", // Geographical
+"nearest_date_x15", "nearest_date_kmin_x16", "nearest_date_kmean_x17", "nearest_date_region_x18", // Temporal
+]                               
+```
 
+```
 FeatureDict = {"Geographical": ["lng", "lat", "nearest_x3", "kavg_x4", "inrange_x7", "region_nearest_x5", "region_mean_x6"],
            "Temporal": ["nearest_date_x15", "nearest_date_kmin_x16", "nearest_date_kmean_x17", "nearest_date_region_x18"],
            "Demographic": ["mall", "market", "hospital", "apartment", "metro", "population", "population density"],
@@ -23,9 +23,7 @@ FeatureDict = {"Geographical": ["lng", "lat", "nearest_x3", "kavg_x4", "inrange_
            "Epidemiologica": ["local_diffusion", "local_dispersion", "local_growthrate", "local_doublingtime",
                                 "country_diffusion", "country_dispersion", "country_growthrate", "country_doublingtime",
                                 "local_r0", "country_r0", "local_beta", "local_gamma", "country_beta", "country_gamma"]}
-                                
 ```
-
 
 Acknowledgment:
 
