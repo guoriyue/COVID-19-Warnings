@@ -7,7 +7,7 @@ data structure:
 FeatureDict = {"Geographical": ["lng", "lat", "nearest_x3", "kavg_x4", "inrange_x7", "region_nearest_x5", "region_mean_x6"],
            "Temporal": ["nearest_date_x15", "nearest_date_kmin_x16", "nearest_date_kmean_x17", "nearest_date_region_x18"],
            "Demographic": ["mall", "market", "hospital", "apartment", "metro", "population", "population_density"],
-           "Temperature": ["max_temperature", "min_temperature", "avg_temperature", "max_humidity", "min_humidity", "avg_humidity", 
+           "Weather": ["max_temperature", "min_temperature", "avg_temperature", "max_humidity", "min_humidity", "avg_humidity", 
                           "wind", "min_AQI", "max_AQI", "avg_AQI"],
            "LiveUpdate": ["local_confirm", "local_suspecte", "local_recover", "local_dead", "local_confirm_add",
                          "local_suspecte_add", "local_recover_add", "local_dead_add", "country_confirm",
